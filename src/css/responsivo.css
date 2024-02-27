@@ -46,13 +46,19 @@
     font-size: 2.8rem;
   }
 
-  .faq .questions-container-right .questions li,
-  .faq .questions-container-left .questions li {
-    gap: 2rem;
-  }
-  .faq .questions-container-right .questions li p,
-  .faq .questions-container-left .questions li p {
+  .faq .questions-container-right .questions .question .btn h2,
+  .faq .questions-container-left .questions .question .btn h2 {
     font-size: 2rem;
+  }
+
+  .faq .questions-container-right .questions .question .btn h2,
+  .faq .questions-container-left .questions .question .btn h2 {
+    font-size: 2rem;
+  }
+
+  .faq .questions-container-right .questions .question .info,
+  .faq .questions-container-left .questions .question .info {
+    font-size: 1.8rem;
   }
 }
 
@@ -142,14 +148,14 @@
     padding: 30px 10px;
   }
 
-  .faq .questions-container-right .questions li,
-  .faq .questions-container-left .questions li {
-    gap: 6rem;
+  .faq .questions-container-right .questions .question .btn h2,
+  .faq .questions-container-left .questions .question .btn h2 {
+    font-size: 1.7rem;
   }
 
-  .faq .questions-container-right .questions li p,
-  .faq .questions-container-left .questions li p {
-    font-size: 1.7rem;
+  .faq .questions-container-right .questions .question .info,
+  .faq .questions-container-left .questions .question .info {
+    font-size: 1.5rem;
   }
 
   .footer .container {
@@ -173,19 +179,19 @@
 }
 
 @media (max-width: 550px) {
-  .faq .questions-container-right,
-  .faq .questions-container-left {
-    gap: 3rem;
-  }
-
-  .faq .questions-container-right .questions li p,
-  .faq .questions-container-left .questions li p {
+  .faq .questions-container-right .questions .question .btn h2,
+  .faq .questions-container-left .questions .question .btn h2 {
     font-size: 1.5rem;
   }
 
-  .faq .questions-container-right .questions li,
-  .faq .questions-container-left .questions li {
-    gap: 2rem;
+  .faq .questions-container-right,
+  .faq .questions-container-left {
+    gap: 2.5rem;
+  }
+
+  .faq .questions-container-right .questions .question .info,
+  .faq .questions-container-left .questions .question .info {
+    margin-right: 20px;
   }
 
   .main .home .info .description h1 {
