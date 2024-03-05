@@ -397,15 +397,15 @@ body {
   margin-right: 50px;
   align-self: start;
   opacity: 0.8;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
-  -webkit-transition: height 400ms ease;
-  transition: height 400ms ease;
+  -webkit-transition: max-height 800ms ease;
+  transition: max-height 800ms ease;
 }
 
 .faq .questions-container-right .questions .question.ativo .info,
 .faq .questions-container-left .questions .question.ativo .info {
-  height: 100px;
+  max-height: 500px;
 }
 
 .faq .questions-container-left {

@@ -1,9 +1,19 @@
 .header .nav-mobile .navegation-mobile {
-  -webkit-transition: height 400ms ease;
-  transition: height 400ms ease;
-  overflow: hidden;
-  height: 0;
+  /* height: 0;
   width: 0;
+  -webkit-transition: height 400ms ease;
+  transition: height 400ms ease; */
+  display: none;
+  animation: opacity 800ms ease; 
+}
+
+@keyframes opacity{
+  0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 
 .main .header .nav-mobile {
@@ -26,25 +36,22 @@
     animation: effect 0.5s alternate;
   }
 
-  .header .nav-mobile .container .navegation-mobile.selecionado {
+  .header .nav-mobile .navegation-mobile.selecionado {
     display: flex;
-    height: 100px;
     flex-direction: column;
     justify-content: center;
+    padding: 20px 0;
     align-items: center;
     position: absolute;
     gap: 15px;
-    padding: 10px 0;
     left: 0;
     width: 100%;
-    /* min-height: calc(100vh - 74px); */
     background-color: white;
-    /* backdrop-filter: blur(20px); */
-    margin-top: 10px;
   }
 
   .header .nav-mobile .navegation-mobile li a {
     color: black;
+    font-weight: bold;
   }
 
   @keyframes effect {
